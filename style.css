@@ -1,1 +1,10 @@
-/* CSS Style Sheet */
+body{
+    background: url("img/Homepgimg.jpg") no-repeat center fixed;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    border: 50px;
+    padding: 55px 0px;
+    text-align: center;
+    
+}
