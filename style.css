@@ -2,6 +2,7 @@ body{
     background: url("img/bts.webp") no-repeat center fixed;
     background-size: cover;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
     color: black;
     margin: auto;
     border: 50px;
@@ -13,7 +14,42 @@ body{
 
 
 div{
-    background-color: rgba(236, 247, 247, 0.6);
+    background-color: rgba(248, 248, 248, 0.5);
     font-family: 'Times New Roman', Times, serif;
 }
 
+a{
+    color:rgb(109, 184, 184);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(51, 99, 99);
+
+}
+
+.index{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    border: 10px;
+    margin: 15px;
+}
+
+.about{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    border: 10px;
+    margin: 15px;
+}
+
+.quiz{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    border: 10px;
+    margin: 15px;
+}
+
+div{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
