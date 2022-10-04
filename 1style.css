@@ -1,8 +1,11 @@
-body{
+html{
     background: url(img/bts.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: black(0, 88, 88);
@@ -18,12 +21,12 @@ p{
 }
 
 a{
-    color: rgb(59, 164, 172);
+    color: rgb(60, 39, 94);
     text-decoration: none;
 }
 
 a:hover{
-    color: rgb(154, 255, 255);
+    color: rgb(171, 141, 218);
     text-decoration: underline;
 }
 
@@ -43,3 +46,16 @@ ul{
 .white{
     color: rgb(171, 141, 218);
 }
+
+.white1{
+    color: rgb(60, 39, 94);
+}
+
+.white2{
+    color: rgb(171, 141, 218);
+}
+
+.white3{
+    color: rgb(60, 39, 94);
+}
+
