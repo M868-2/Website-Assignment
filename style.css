@@ -1,6 +1,9 @@
-body{
+html{
     background: url("img/bts.webp") no-repeat center fixed;
     background-size: cover;
+}
+
+body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 22px;
     color: black;
@@ -19,12 +22,12 @@ div{
 }
 
 a{
-    color:rgb(109, 184, 184);
+    color:rgb (60, 39, 94);
     text-decoration: none;
 }
 
 a:hover{
-    color: rgb(51, 99, 99);
+    color:  rgb(171, 141, 218);
 
 }
 
@@ -52,4 +55,8 @@ a:hover{
 div{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    width: 600px;
+    border-radius: 10px;
+    padding: 30px;
+    margin: auto;
 }
