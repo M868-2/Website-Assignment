@@ -4,7 +4,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Times New Roman', Times, serif;
-    color: black;
+    font-size: 20px;
+    color: black(0, 88, 88);
     text-align: center;
 }
 
@@ -13,21 +14,32 @@ h1{
 }
 
 p{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 a{
-    color: rgb(20, 68, 68);
+    color: rgb(59, 164, 172);
     text-decoration: none;
 }
 
 a:hover{
-    color: rgb(100, 182, 182);
+    color: rgb(154, 255, 255);
     text-decoration: underline;
 }
 
-ul {
+ul{
     text-align: left;
     width: 450px;
     margin: auto;
+    font-size: 18px;
+}
+
+.ul2{
+    text-align: left;
+    width: 500pxpx;
+    margin: auto;
+}
+
+.white{
+    color: rgb(171, 141, 218);
 }
