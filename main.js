@@ -12,7 +12,16 @@ let q5 = document.getElementById("qnFive");
 
 // IF STATEMENTS
 function btnclicked() {
-    let score = 0 
+    // VARIABLES
+    let q1 = document.getElementById("qnOne");
+    let q2 = document.getElementById("qnTwo").toLowerCase();
+    let q3 = document.getElementById("qnThree").toLowerCase();
+    let q4 = document.getElementById("qnFour").toLowerCase();
+    let q5 = document.getElementById("qnFive");
+    let scoreTotal = (q1 + q2 + q3 + q4 +q4);
+    let precentage = (q1 + q2 + q3 + q4 +q4);
+
+    let score = 0; 
     if (q1 === 7) {
         score+20;
     } else if (q2 === "bangtan sonyeodan") {
