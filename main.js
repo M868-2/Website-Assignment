@@ -2,35 +2,51 @@
 // EVENT LISTENER
 document.getElementById("btn").addEventListener("click", btnClicked);
 
+// VARIABLES
+let frac = document.getElementById("score");
+let percentage = document.getElementById("percent");
+
 // IF STATEMENTS
 function btnClicked() {
   // VARIABLES
-  let q1 = document.getElementById("qnOne");
-  let q2 = document.getElementById("qnTwo").toLowerCase();
-  let q3 = document.getElementById("qnThree").toLowerCase();
-  let q4 = document.getElementById("qnFour").toLowerCase();
-  let q5 = document.getElementById("qnFive");
+  let q1 = document.getElementById("qnOne").value;
+  let q2 = document.getElementById("qnTwo").value.toLowerCase();
+  let q3 = document.getElementById("qnThree").value.toLowerCase();
+  let q4 = document.getElementById("qnFour").value.toLowerCase();
+  let q5 = document.getElementById("qnFive").value;
 
-  let scorePercent = 0;
-  let scoreFrac = 0;
+  let scoreCounter = 0;
+
   if (q1 === 7) {
-    scorePercent + 20;
-    scoreFrac++;
+    scoreCounter ++;
   } else {
+    q1.classList.add("active");
   }
+  
   if (q2 === "bangtan sonyeodan") {
-    scorePercent + 20;
-    scoreFrac++;
-  } else if (q3 === "June 12, 2013" || q3 === "June 12 2013") {
-    scorePercent + 20;
-    scoreFrac++;
-  } else if (q4 === "no more dream") {
-    scorePercent + 20;
-    scoreFrac++;
-  } else if (q5 === 462) {
-    scorePercent + 20;
-    scoreFrac++;
+    scoreCounter ++;
+  } else {
+    q2.classList.add("active");
   }
-  document.getElementById("frac").innerHTML = scoreFrac;
-  document.getElementById("percent").innerHTML = percentage;
+
+  if (q3 === "june 12, 2013" || q3 === "june 12 2013" || q3 === "june 12" || q3 === "june 2013") {
+    scoreCounter ++;
+  } else {
+    q3.classList.add("active");
+  }
+
+  if (q4 === "no more dream") {
+    scoreCounter ++;
+  } else {
+    q4.classList.add("active");
+  }
+
+  if (q5 === 462) {
+    scoreCounter ++;
+  } else {
+    q5.classList.add("active");
+  }
+
+  score.innerHTML = `${scoreCounter}/5`;
+  percentage.innerHTML = `${scoreCounter /5 * 100}`;
 }
