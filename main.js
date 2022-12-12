@@ -27,7 +27,7 @@ function btnClicked() {
     scoreCounter++;
     f1.innerHTML = "correct";
   } else {
-    f1.innerHTMl = "incorrect";
+    f1.innerHTML = "incorrect";
   }
 
   if (q2 === "bangtan sonyeodan") {
