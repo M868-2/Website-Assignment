@@ -5,6 +5,7 @@ document.getElementById("btn").addEventListener("click", btnClicked);
 // VARIABLES
 let frac = document.getElementById("score");
 let percentage = document.getElementById("percent");
+let msg = document.getElementById("message");
 
 // IF STATEMENTS
 function btnClicked() {
@@ -14,39 +15,61 @@ function btnClicked() {
   let q3 = document.getElementById("qnThree").value.toLowerCase();
   let q4 = document.getElementById("qnFour").value.toLowerCase();
   let q5 = document.getElementById("qnFive").value;
+  let f1 = document.getElementById("feedback1");
+  let f2 = document.getElementById("feedback2");
+  let f3 = document.getElementById("feedback3");
+  let f4 = document.getElementById("feedback4");
+  let f5 = document.getElementById("feedback5");
 
   let scoreCounter = 0;
 
-  if (q1 === 7) {
-    scoreCounter ++;
+  if (q1 === "7") {
+    scoreCounter++;
+    f1.innerHTML = "correct";
   } else {
-    q1.classList.add("active");
-  }
-  
-  if (q2 === "bangtan sonyeodan") {
-    scoreCounter ++;
-  } else {
-    q2.classList.add("active");
+    f1.innerHTMl = "incorrect";
   }
 
-  if (q3 === "june 12, 2013" || q3 === "june 12 2013" || q3 === "june 12" || q3 === "june 2013") {
-    scoreCounter ++;
+  if (q2 === "bangtan sonyeodan") {
+    scoreCounter++;
+    f2.innerHTML = "correct";
   } else {
-    q3.classList.add("active");
+    f2.innerHTML = "incorrect";
+  }
+
+  if (
+    q3 === "june 12, 2013" ||
+    q3 === "june 12 2013" ||
+    q3 === "june 12" ||
+    q3 === "june 2013"
+  ) {
+    scoreCounter++;
+    f3.innerHTML = "correct";
+  } else {
+    f3.innerHTML = "incorrect";
   }
 
   if (q4 === "no more dream") {
-    scoreCounter ++;
+    scoreCounter++;
+    f4.innerHTML = "correct";
   } else {
-    q4.classList.add("active");
+    f4.innerHTML = "incorrect";
   }
 
-  if (q5 === 462) {
-    scoreCounter ++;
+  if (q5 === "462") {
+    scoreCounter++;
+    f5.innerHTML = "correct";
   } else {
-    q5.classList.add("active");
+    f5.innerHTML = "incorrect";
   }
 
-  score.innerHTML = `${scoreCounter}/5`;
-  percentage.innerHTML = `${scoreCounter /5 * 100}`;
+  frac.innerHTML = `${scoreCounter}/5`;
+  percentage.innerHTML = `${(scoreCounter / 5) * 100}%`;
+
+  if (scoreCounter >= 3) {
+    msg.innerHTML = "Great work!";
+  } else {
+    msg.innerHTML =
+      "Read the over the previous pages and give this quiz another shot!";
+  }
 }
