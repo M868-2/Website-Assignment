@@ -23,14 +23,14 @@ function btnClicked() {
 
   let scoreCounter = 0;
 
-  if (q1 === "7") {
+  if (q1 === "7 ") {
     scoreCounter++;
     f1.innerHTML = "correct";
   } else {
     f1.innerHTML = "incorrect";
   }
 
-  if (q2 === "bangtan sonyeodan") {
+  if (q2 === "bangtan sonyeodan ") {
     scoreCounter++;
     f2.innerHTML = "correct";
   } else {
@@ -38,10 +38,10 @@ function btnClicked() {
   }
 
   if (
-    q3 === "june 12, 2013" ||
-    q3 === "june 12 2013" ||
-    q3 === "june 12" ||
-    q3 === "june 2013"
+    q3 === "june 12, 2013 " ||
+    q3 === "june 12 2013 " ||
+    q3 === "june 12 " ||
+    q3 === "june 2013 "
   ) {
     scoreCounter++;
     f3.innerHTML = "correct";
@@ -49,14 +49,14 @@ function btnClicked() {
     f3.innerHTML = "incorrect";
   }
 
-  if (q4 === "no more dream") {
+  if (q4 === "no more dream ") {
     scoreCounter++;
     f4.innerHTML = "correct";
   } else {
     f4.innerHTML = "incorrect";
   }
 
-  if (q5 === "462") {
+  if (q5 === "462 ") {
     scoreCounter++;
     f5.innerHTML = "correct";
   } else {
