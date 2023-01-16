@@ -12,6 +12,10 @@ body{
     text-align: center;
 }
 
+p{
+    font-size: large;
+}
+
 h1{
     color: black;
 }
@@ -22,7 +26,7 @@ p{
 
 a{
     color: rgb(60, 39, 94);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover{
