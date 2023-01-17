@@ -6,6 +6,11 @@ document.getElementById("btn").addEventListener("click", btnClicked);
 let frac = document.getElementById("score");
 let percentage = document.getElementById("percent");
 let msg = document.getElementById("message");
+let f1 = document.getElementById("feedback1");
+let f2 = document.getElementById("feedback2");
+let f3 = document.getElementById("feedback3");
+let f4 = document.getElementById("feedback4");
+let f5 = document.getElementById("feedback5");
 
 // IF STATEMENTS
 function btnClicked() {
@@ -15,11 +20,6 @@ function btnClicked() {
   let q3 = document.getElementById("qnThree").value.toLowerCase();
   let q4 = document.getElementById("qnFour").value.toLowerCase();
   let q5 = document.getElementById("qnFive").value;
-  let f1 = document.getElementById("feedback1");
-  let f2 = document.getElementById("feedback2");
-  let f3 = document.getElementById("feedback3");
-  let f4 = document.getElementById("feedback4");
-  let f5 = document.getElementById("feedback5");
 
   let scoreCounter = 0;
 
